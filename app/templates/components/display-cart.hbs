@@ -1,0 +1,11 @@
+<h1>
+  My Cart
+</h1>
+
+<ul>
+  {{#each shoppingCart.items as |item|}}
+    <li>{{item.name}} -- {{item.price}}</li>
+    <button {{action 'remove' item}}>Remove Len</button>
+  {{/each}}
+  <h4>Total: {{total-price shoppingCart.items}}</h4>
+</ul>
