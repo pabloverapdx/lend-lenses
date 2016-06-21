@@ -1,0 +1,17 @@
+<div class="lenForm">
+  <form>
+    <label for="username">Username: </label>
+    {{input value=username}}
+    <label for="rating">Rating: </label>
+    {{#x-select value=rating}}
+      {{#x-option value="1"}}1 Lens{{/x-option}}
+      {{#x-option value="2"}}2 Lenses{{/x-option}}
+      {{#x-option value="3"}}3 Lenses{{/x-option}}
+      {{#x-option value="4"}}4 Lenses{{/x-option}}
+      {{#x-option value="5"}}5 Lenses{{/x-option}}
+    {{/x-select}}
+    <label for="comment">Review: </label>
+    {{input value=comment}}
+    <button {{action 'saveReview'}}>Submit Review</button>
+  </form>
+</div>

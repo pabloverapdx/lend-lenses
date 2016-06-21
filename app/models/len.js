@@ -9,4 +9,5 @@ description: DS.attr(),
 condition: DS.attr(),
 pricing: DS.attr(),
 image: DS.attr(),
+reviews: DS.hasMany('review', {async: true})
 });

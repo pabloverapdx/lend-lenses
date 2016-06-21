@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('create-listing');
   this.route('len', {path: '/len/:len_id'});
   this.route('cart');
+  this.route('review');
 });
 
 export default Router;

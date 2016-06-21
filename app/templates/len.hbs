@@ -1,1 +1,8 @@
 {{len-detail len=model}}
+
+{{new-review len=model saveReview="saveReview"}}
+
+<h2>Reviews</h2>
+{{#each model.reviews as |review|}}
+  {{review-tile review=review}}
+{{/each}}
