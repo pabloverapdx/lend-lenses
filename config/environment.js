@@ -4,6 +4,12 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'lend-lenses',
     environment: environment,
+    firebase: {
+      apiKey: "AIzaSyCto2BXjo4a9YwHRM6sXTEbS6WymsJ_rI4",
+      authDomain: "lend-a-lens.firebaseapp.com",
+      databaseURL: "https://lend-a-lens.firebaseio.com",
+      storageBucket: "lend-a-lens.appspot.com",
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
