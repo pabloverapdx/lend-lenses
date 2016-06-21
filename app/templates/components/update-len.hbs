@@ -1,4 +1,4 @@
-{{#if addNewLen}}
+{{#if updateLenForm}}
  <div class="lenForm">
    <form>
      <label for="brand">Brand: </label>
@@ -13,10 +13,10 @@
 				{{input value=pricing id="pricing"}}
      <label for="image">Image URL: </label>
      {{input value=image id="image"}}
-     <button {{action 'saveLen' len}}>Save Lens</button>
+     <button {{action 'updateLen' len}}>Update Listing</button>
    </form>
    <button {{action 'toggleDetail'}}>Cancel</button>
  </div>
  {{else}}
-   <button {{action 'toggleDetail'}}>Add a Lens</button>
+   <button {{action 'toggleDetail'}}>Update Len</button>
  {{/if}}

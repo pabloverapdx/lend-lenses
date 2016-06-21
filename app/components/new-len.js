@@ -5,14 +5,14 @@ export default Ember.Component.extend({
     toggleDetail() {
       this.toggleProperty('addNewLen');
     },
-    saveP(){
+    saveLen(){
       var params = {
-        brand: this.get('brand') ? this.get('brand') : " ",
-        type: this.get('type') ? this.get('type') : " ",
-        description: this.get('description') ? this.get('description') : " ",
-        condition: this.get('condition') ? this.get('condition') : " ",
-        pricing: this.get('pricing') ? this.get('pricing') : " ",
-        image: this.get('image') ? this.get('image') : " ",
+        brand: this.get('brand'),
+        type: this.get('type'),
+        description: this.get('description'),
+        condition: this.get('condition'),
+        pricing: this.get('pricing'),
+        image: this.get('image'),
       };
       this.toggleProperty('addNewLen');
       this.set('brand', " ");

@@ -7,6 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('create-listing');
+  this.route('len', {path: '/len/:len_id'});
 });
 
 export default Router;

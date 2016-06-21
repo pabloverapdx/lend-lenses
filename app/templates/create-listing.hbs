@@ -1,6 +1,9 @@
 <h1>Create A Listing</h1>
-{{new-len len=model saveLen="saveLen"}}
-<!-- {{log model}} -->
+<hr>
 {{#each model as |len|}}
-   {{len.brand}}
+   {{len-tile len=len}}
+   {{update-len len=len updateLen="updateLen"}}
+   <button {{action 'delete' len}}>Delete Lens</button>
 {{/each}}
+<hr>
+{{new-len len=model saveLen="saveLen"}}
