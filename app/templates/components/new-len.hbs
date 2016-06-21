@@ -1,0 +1,22 @@
+{{#if addNewLen}}
+ <div class="lenForm">
+   <form>
+     <label for="brand">Brand: </label>
+     {{input value=brand id="brand"}}
+     <label for="type">Type: </label>
+     {{input value=type id="type"}}
+     <label for="description">Description: </label>
+     {{input value=description id="description"}}
+     <label for="condition">Condition: </label>
+			{{input value=condition id="condition"}}
+			<label for="pricing">Pricing: </label>
+				{{input value=pricing id="pricing"}}
+     <label for="image">Image URL: </label>
+     {{input value=image id="image"}}
+     <button {{action 'saveLen' len}}>Save</button>
+   </form>
+   <button {{action 'toggleDetail'}}>Cancel</button>
+ </div>
+ {{else}}
+   <button {{action 'toggleDetail'}}>Add New Lens</button>
+ {{/if}}

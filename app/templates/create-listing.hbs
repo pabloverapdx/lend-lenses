@@ -1,1 +1,6 @@
-{{outlet}}
+<h1>Create A Listing</h1>
+{{new-len len=model saveLen="saveLen"}}
+<!-- {{log model}} -->
+{{#each model as |len|}}
+   {{len.brand}}
+{{/each}}
