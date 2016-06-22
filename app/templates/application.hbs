@@ -1,7 +1,30 @@
-<h2 id="title">Welcome to Lend a Lens</h2>
-{{#link-to 'index'}}Home{{/link-to}}
-{{#link-to 'create-listing'}}Create Listing{{/link-to}}
-{{#link-to 'cart'}}My Cart{{/link-to}}
+<div class="jumbotron">
+<div class="row">
+  <div class="col-sm-3">
+    <h2>Lend Lenses</h2>
+  </div>
+  <div class="col-sm-8">
+    <nav class="navBar">
+      <ul>
+        <li>
+          <h4>{{#link-to 'index'}}Home{{/link-to}}</h4>
+        </li>
+        <li>
+          <h4>{{#link-to 'create-listing'}}Create Listing{{/link-to}}</h4>
+        </li>
+        <li>
+          <h4>{{#link-to 'cart'}}My Cart{{/link-to}}</h4>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<h3 class="slogan">Rent Lenses From Local Photographers</h3>
+</div>
+
+
+
+
 
 
 {{outlet}}

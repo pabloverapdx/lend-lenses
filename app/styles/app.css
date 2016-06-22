@@ -1,0 +1,27 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+ul {
+  list-style: none;
+  display: inline-block;
+}
+
+ul li {
+display: inline-block;
+margin-left: 2%;
+margin-right: 2%;
+}
+.navBar {
+  float: right;
+}
+
+.slogan {
+  margin-top: 10%;
+  text-align: center;
+}
+
+img.lenImage {
+  max-width: 250px;
+  height: auto;
+}
